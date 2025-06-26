@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingBeast - Modern Typing Test</title>
+    <link rel="stylesheet" href="typing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">🦁</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <div class="loader-text">Loading TypingBeast...</div>
+        </div>
+    </div>
+    <div id="main-content" style="display:none;">
+        <nav class="navbar">
+            <div class="nav-logo">🦁 TypingBeast</div>
+            <div class="nav-links">
+                <button id="themeBtn" class="nav-btn">Switch Theme</button>
+            </div>
+        </nav>
+        <section class="hero">
+            <h1>Welcome to <span class="highlight">TypingBeast</span></h1>
+            <p class="hero-desc">Level up your typing skills with interactive tests, real-time stats, and a beautiful modern interface. Get ready to roar!</p>
+        </section>
+        <main class="main-card">
+            <div class="quote-area">
+                <div class="quote" id="quoteDisplay"></div>
+            </div>
+            <input type="text" id="inputBox" placeholder="Start typing here..." autocomplete="off" autofocus />
+            <div class="stats new-stats">
+                <div class="stat-item"><span class="stat-icon">⚡</span>WPM: <span id="wpm">0</span></div>
+                <div class="stat-item"><span class="stat-icon">🎯</span>Accuracy: <span id="accuracy">100</span>%</div>
+                <div class="stat-item"><span class="stat-icon">⏰</span>Time: <span id="timer">0</span>s</div>
+            </div>
+            <div class="controls">
+                <button id="restartBtn">Restart</button>
+                <button id="nextBtn">Next Paragraph</button>
+            </div>
+            <div class="history" id="historyPanel">
+                <h3>Test History</h3>
+                <ul id="historyList"></ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <span>Made with <span style="color:#ffcb05;">&#10084;</span> by TypingBeast Team</span>
+        </footer>
+    </div>
+    <script src="typing.js"></script>
+</body>
+</html>
